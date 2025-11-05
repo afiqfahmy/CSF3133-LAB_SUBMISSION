@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Calculator Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+
+        div {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #333;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        form,
+        .calculator {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        output {
+            margin-top: 5px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div>
+        <header>
+            <h1>My Awesome Webpage <span style="font-size: 0.6em; color: blueviolet;">– Connecting You Better!</span>
+            </h1>
+        </header>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Contact Form -->
+        <form>
+            <h2>Contact Us</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="date">Preferred Contact Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="satisfaction">Satisfaction Level:</label>
+
+            <input id="x" type="range" min="0" max="10" step="1" value="">
+            <output name="xValue" id="xValue" for="x"></output>
+
+
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Inline Calculator -->
+        <div class="calculator" clear:both>
+            <h2>Simple Calculator</h2>
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" value="0">
+
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" value="0">
+
+            <p>Sum: <output id="sum">0</output></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div>
+        <footer>
+            <p>Contact us at s76555@ocean.umt.edu.com | &copy; 2025 Cool Kids</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
