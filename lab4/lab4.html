@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - S76555</title>
+
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Link states */
+        a:link {
+            color: white;
+        }
+
+        a:visited {
+            color: lightgray;
+        }
+
+        a:hover {
+            color: #00ccff;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Responsive Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <article>
+            <h2>Welcome</h2>
+            <p>Afiq Fahmi</p>
+        </article>
+    </section>
+
+    <section id="video">
+        <h2>Multo by Cup of Joe</h2>
+        <video width="480" controls>
+            <source src="Cup of Joe performs  Multo  LIVE on Wish 107.5 Bus.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="contact">
+        <h2>My Simple Form</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" name="hobby" value="reading"> Reading
+            <input type="checkbox" name="hobby" value="gaming"> Gaming
+            <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>s76555@ocean.umt.edu.my</p>
+    </footer>
+</body>
+
+</html>
