@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+</head>
+
+<body>
+    <h2>What can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case, JavaScript changes the value of the <strong>src</strong> attribute of an image.</p>
+
+    <img id="myImage" src="on.png" alt="Light Bulb"> <br>
+
+    <button type="button" onclick="document.getElementById('myImage').src='on.png'">
+        Turn On the Light
+    </button>
+
+    <button type="button" onclick="document.getElementById('myImage').src='off.png'">
+        Turn Off
+    </button>
+
+</body>
+
+</html>
